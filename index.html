@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Do cool things</title>
+    <meta charset="UTF-8"/>
+</head>
+
+<textarea rows="4" cols="50" id="startText" name="startText" placeholder="Input Text Here"></textarea>
+<textarea rows="4" cols="50" id="endText" name="endText" placeholder="Output Goes Here"></textarea>
+
+
+<br>
+<button type="button" onclick="getElementById('endText').value = btoa(document.getElementById('startText').value)">Base 64 Encode</button> 
+<button type="button" onclick="getElementById('endText').value = atob(document.getElementById('startText').value)">Base 64 Decode</button> 
+<button type="button" onclick="getElementById('endText').value = encodeURIComponent(document.getElementById('startText').value)">Url Encode</button> 
+<button type="button" onclick="getElementById('endText').value = decodeURIComponent(document.getElementById('startText').value)">Url Decode</button> 
+
+
+<p>I do no input validations - Don't be a goober</p>
+
+</html>
